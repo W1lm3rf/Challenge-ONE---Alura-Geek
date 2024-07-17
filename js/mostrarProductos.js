@@ -21,8 +21,12 @@ function crearProducto(nombre,precio,imagen){
 
 
 async function listarProductos(){
-    const listaAPI = conexionAPI.listarProductos()
-    listaAPI.array.forEach(producto => lista.appendChild(crearProducto(producto.nombre,producto.precio,producto.imagen)));
+    try{
+        const listaAPI = await conexionAPI.listarProductos()
+        listaAPI.forEach(productos => lista.appendChild(crearProducto(productos.nombre, productos.precio, productos.imagen)));
+    }catch{
+        lista.innerHTML=`<h2> Ups! Error en la conexion</h2>`
+    }
 }
 
-listarProductos()
+listarProductos();

@@ -41,8 +41,24 @@ header img {
     box-shadow: -4px 4px 2px 2px gray;
 }
 
+#subContenedor{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100%;
+    height: 100%;
+    padding-right: 20px;
+}
+
 #contenedorProductos{
     list-style-type: none;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 
+    repeat(
+        auto-fit,
+        minmax(150px, 1fr)
+    );
+    gap: 30px;
 }
 
 
@@ -63,13 +79,15 @@ header img {
 .imagen_producto{
     overflow: hidden;
     height: 174px;
-    width: 176px;
+    max-width: 176px;
     border: 3px solid black;
     border-radius: 3px;
 }
 
 .imagen_producto img{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .descripcion-producto{

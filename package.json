@@ -1,7 +1,7 @@
 {
-  "name": "alura_geek",
+  "name": "alura-geek",
   "version": "1.0.0",
-  "description": "plataforma de imagenes",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,13 +10,5 @@
   "license": "ISC",
   "dependencies": {
     "json-server": "^1.0.0-beta.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/W1lm3rf/Challenge-ONE-Alura-Geek.git"
-  },
-  "bugs": {
-    "url": "https://github.com/W1lm3rf/Challenge-ONE-Alura-Geek/issues"
-  },
-  "homepage": "https://github.com/W1lm3rf/Challenge-ONE-Alura-Geek#readme"
+  }
 }
